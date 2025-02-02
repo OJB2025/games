@@ -24,6 +24,7 @@ function App() {
   }
   return (
     <>
+    <h2>tictactoe</h2>
       <div className='bigbox'>
           <div className='box'
           onClick={()=>{
