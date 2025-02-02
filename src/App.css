@@ -1,0 +1,22 @@
+.bigbox{
+  width: 320px;
+  height: 320px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: auto;
+  margin-top: 200px;
+}
+.box{
+  width: 98px;
+  height: 98px;
+  background: rgb(180, 196, 196);
+  border: solid 1px rgb(101, 48, 237);
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+  font-size: 70px;
+  line-height: 98px;
+}
