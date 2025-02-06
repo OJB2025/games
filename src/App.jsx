@@ -36,18 +36,50 @@ function App() {
           onClick={()=>{
             clickBox(box2, setBox2)
           }
-          }>{box2}</div>
+          }
+          >{box2}</div>
           <div className='box'
           onClick={()=>{
             clickBox(box3, setBox3)
           }
-          }>{box3}</div>
-          <div className='box'>{box4}</div>
-          <div className='box'>{box5}</div>
-          <div className='box'>{box6}</div>
-          <div className='box'>{box7}</div>
-          <div className='box'>{box8}</div>
-          <div className='box'>{box9}</div>
+          }
+          >{box3}</div>
+          <div className='box'
+          onClick={()=>{
+            clickBox(box4, setBox4)
+          }
+          }
+          >{box4}</div>
+          <div className='box'
+          onClick={()=>{
+            clickBox(box5, setBox5)
+          }
+          }
+          >{box5}</div>
+          <div className='box'
+          onClick={()=>{
+            clickBox(box6, setBox6)
+          }
+          }
+          >{box6}</div>
+          <div className='box'
+          onClick={()=>{
+            clickBox(box7, setBox7)
+          }
+          }
+          >{box7}</div>
+          <div className='box'
+          onClick={()=>{
+            clickBox(box8, setBox8)
+          }
+          }
+          >{box8}</div>
+          <div className='box'
+          onClick={()=>{
+            clickBox(box9, setBox9)
+          }
+          }
+          >{box9}</div>
       </div>
     </>
     
