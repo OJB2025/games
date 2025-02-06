@@ -20,9 +20,15 @@
   font-size: 70px;
   line-height: 98px;
 }
+
 .button{
-  height: 400px;
-  font-size: 90px;
-  background-color: black;
-  
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    margin-top: 20px;
 }
