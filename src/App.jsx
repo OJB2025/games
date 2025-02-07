@@ -49,7 +49,7 @@ function App() {
         <div className='box'onClick={()=>{clickBox(box8, setBox8)}}>{box8}</div>
         <div className='box'onClick={()=>{clickBox(box9, setBox9)}}>{box9}</div>
       </div>
-      <div class="btn">Reset game</div>
+      <div class="btn">resetGame</div>
     </>
     
   )
