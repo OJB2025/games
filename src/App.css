@@ -7,6 +7,12 @@
   gap: 10px;
   margin: auto;
   margin-top: 200px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.bigboxwin{
+  background-color: rgb(28, 242, 28) !important;
+  
 }
 .box{
   width: 98px;
