@@ -10,6 +10,19 @@
   padding: 10px;
   border-radius: 5px;
 }
+
+.bigbox2{
+  width: 520px;
+  height: 520px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 5px;
+}
 .bigboxwin{
   background-color: rgb(28, 242, 28) !important;
   
@@ -25,6 +38,12 @@
   color: black;
   font-size: 70px;
   line-height: 98px;
+}
+.bigbox2 .box{
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+  line-height: 45px;
 }
 .btn{
   width: 150px;

@@ -10,9 +10,11 @@ function Tictactoe() {
 
   const clickBox = (index) => {
     if (boxes[index] === '' && !playerWins) {
-      const newBoxes = [...boxes]
-      newBoxes[index] = currentPlayer
-      setBoxes(newBoxes)
+      // ["","","",'',"","","","",'']
+      //boxes[index] = currentPlayer
+      const newBoxes = [...boxes] //copied the content of a state into a variable
+      newBoxes[index] = currentPlayer //change the content at the clicked index in the newVariable
+      setBoxes(newBoxes) //replace boxed with the updated variable
     }
   }
 
@@ -31,9 +33,12 @@ function Tictactoe() {
       [0, 4, 8], [2, 4, 6] // Diagonal
     ]
 
-    for (let pattern of winPatterns) {
+    for (let pattern of winPatterns) { //loop through winPatterns
       const [a, b, c] = pattern
-      if (boxes[a] && boxes[a] === boxes[b] && boxes[b] === boxes[c]) {
+      if (boxes[a] //if boxes[a] is empty
+        && boxes[a] === boxes[b] //if boxes[a] is equal to boxes[b]
+        && boxes[b] === boxes[c] //if boxes[b] is equal to boxes[c]
+        ) { //
         setPlayerWins(true)
         updateScore()
         return
