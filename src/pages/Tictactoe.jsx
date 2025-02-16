@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import '../App.css'
 import Scoreboard from '../components/ScoreBoard'
+import Header from '../components/Header'
 
 function Tictactoe() {
   const [boxes, setBoxes] = useState(Array(9).fill('')) // 9 boxes initialized to empty
@@ -64,21 +65,25 @@ function Tictactoe() {
 
   return (
     <>
-      <h2>Tic Tac Toe</h2>
+      <Header/>
+      <h2 className='text-[50px] text-center w-full'>Tic Tac Toe</h2>
+      <div className='flex justify-center'>
+      <button className="btn m-auto my-[30px]" onClick={resetGame}>Reset Game</button>
+      </div>
       {playerWins && <h3>Player {currentPlayer} Wins!!!</h3>}
       <Scoreboard playerXscore={score[0]} playerOscore={score[1]} />
-      <div className={`bigbox ${playerWins ? 'bigboxwin' : ''}`}>
+      <div className={`bigbox_ ${playerWins ? 'bigboxwin_' : ''}`}>
         {boxes.map((box, index) => (
           <div
             key={index}
-            className='box'
+            className='box_'
             onClick={() => clickBox(index)}
           >
             {box}
           </div>
         ))}
       </div>
-      <button className="btn" onClick={resetGame}>Reset Game</button>
+      
     </>
   )
 }

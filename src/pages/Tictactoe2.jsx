@@ -74,16 +74,16 @@ function Tictactoe2() {
     <h3>Player {currentPlayer} Wins!!!</h3>
     }
     <Scoreboard playerXscore={scoreCounterX} playerOscore={scoreCounterO} />
-      <div className={`bigbox ${playerWins?'bigboxwin':''}`}>
-        <div className='box' onClick={()=>{clickBox(box1, setBox1)}}>{box1}</div>
-        <div className='box' onClick={()=>{clickBox(box2, setBox2)}}>{box2}</div>
-        <div className='box' onClick={()=>{clickBox(box3, setBox3)}}>{box3}</div>
-        <div className='box' onClick={()=>{clickBox(box4, setBox4)}}>{box4}</div>
-        <div className='box' onClick={()=>{clickBox(box5, setBox5)}}>{box5}</div>
-        <div className='box' onClick={()=>{clickBox(box6, setBox6)}}>{box6}</div>
-        <div className='box' onClick={()=>{clickBox(box7, setBox7)}}>{box7}</div>
-        <div className='box' onClick={()=>{clickBox(box8, setBox8)}}>{box8}</div>
-        <div className='box' onClick={()=>{clickBox(box9, setBox9)}}>{box9}</div>
+      <div className={`bigbox_ ${playerWins?'bigboxwin_':''}`}>
+        <div className='box_' onClick={()=>{clickBox(box1, setBox1)}}>{box1}</div>
+        <div className='box_' onClick={()=>{clickBox(box2, setBox2)}}>{box2}</div>
+        <div className='box_' onClick={()=>{clickBox(box3, setBox3)}}>{box3}</div>
+        <div className='box_' onClick={()=>{clickBox(box4, setBox4)}}>{box4}</div>
+        <div className='box_' onClick={()=>{clickBox(box5, setBox5)}}>{box5}</div>
+        <div className='box_' onClick={()=>{clickBox(box6, setBox6)}}>{box6}</div>
+        <div className='box_' onClick={()=>{clickBox(box7, setBox7)}}>{box7}</div>
+        <div className='box_' onClick={()=>{clickBox(box8, setBox8)}}>{box8}</div>
+        <div className='box_' onClick={()=>{clickBox(box9, setBox9)}}>{box9}</div>
       </div>
       <button className="btn" onClick={resetGame}>Reset Game</button>
     </>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import '../App.css'
 import Scoreboard from '../components/ScoreBoard'
+import Header from '../components/Header'
 
 function Marchy() {
   const [boxes, setBoxes] = useState(Array(100).fill(0)) // 9 boxes initialized to empty
@@ -25,7 +26,8 @@ function Marchy() {
 
   return (
     <>
-      <h2>Tic Tac Toe</h2>
+      <Header/>
+      <h2 className='text-[50px] text-center w-full'>Tic Tac Toe</h2>
       <div className={`bigbox2 `}>
         {boxes.map((box, index) => (
           <div

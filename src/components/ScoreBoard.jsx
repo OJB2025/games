@@ -1,24 +1,25 @@
 import React from 'react';
 
-function Scoreboard({playerXscore, playerOscore}) {
+function Scoreboard({ playerXscore, playerOscore }) {
   return (
-    <div>
-      <h1>Game Scoreboard</h1>
-      <table border="1" cellPadding="10" cellSpacing="0">
+    <div className="max-w-lg mx-auto bg-white rounded-lg shadow-lg p-6 mt-8">
+      <h1 className="text-3xl font-semibold text-center text-gray-800 mb-6">Game Scoreboard</h1>
+      
+      <table className="min-w-full table-auto border-collapse">
         <thead>
-          <tr>
-            <th>Player</th>
-            <th>Score</th>
+          <tr className="bg-gray-100">
+            <th className="py-3 px-6 text-left text-sm font-medium text-gray-700">Player</th>
+            <th className="py-3 px-6 text-left text-sm font-medium text-gray-700">Score</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Player X</td>
-            <td>{playerXscore}</td>
+          <tr className="border-t hover:bg-gray-50">
+            <td className="py-3 px-6 text-sm font-medium text-gray-800">Player X</td>
+            <td className="py-3 px-6 text-sm font-medium text-gray-800">{playerXscore}</td>
           </tr>
-          <tr>
-            <td>Player O</td>
-            <td>{playerOscore}</td>
+          <tr className="border-t hover:bg-gray-50">
+            <td className="py-3 px-6 text-sm font-medium text-gray-800">Player O</td>
+            <td className="py-3 px-6 text-sm font-medium text-gray-800">{playerOscore}</td>
           </tr>
         </tbody>
       </table>

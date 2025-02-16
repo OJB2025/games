@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+.btn_{
+    @apply rounded-md cursor-pointer min-w-[150px] h-[60px] 
+    leading-[60px] px-[20px] bg-gray-300 text-gray-900 hover:bg-blue-300 hover:rounded-full;
+}
+.bigbox_{
+    @apply w-[600px] h-[600px] flex flex-wrap gap-[5px] p-[10px] bg-gray-100 rounded-md m-auto mt-[50px];
+}
+.box_{
+    @apply w-[190px] h-[190px] bg-gray-300 cursor-pointer rounded-md p-[30px] text-[100px] leading-[130px] text-center;
+}
