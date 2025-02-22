@@ -7,7 +7,7 @@ function Scoreboard({ playerXscore, playerOscore }) {
       
       <table className="min-w-full table-auto border-collapse">
         <thead>
-          <tr className="bg-gray-200">
+          <tr className="bg-gray-500">
             <th className="py-3 px-6 text-left text-sm font-medium text-gray-700">Player</th>
             <th className="py-3 px-6 text-left text-sm font-medium text-gray-700">Score</th>
           </tr>
