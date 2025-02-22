@@ -7,18 +7,18 @@ function Scoreboard({ playerXscore, playerOscore }) {
       
       <table className="min-w-full table-auto border-collapse">
         <thead>
-          <tr className="bg-gray-500">
+          <tr className="bg-gray-200">
             <th className="py-3 px-6 text-left text-sm font-medium text-gray-700">Player</th>
             <th className="py-3 px-6 text-left text-sm font-medium text-gray-700">Score</th>
           </tr>
         </thead>
         <tbody>
           <tr className="border-t hover:bg-gray-50">
-            <td className="py-3 px-6 text-sm font-medium text-gray-800">Player X</td>
+            <td className="py-3 px-6 text-sm font-medium text-blue-800">Player X</td>
             <td className="py-3 px-6 text-sm font-medium text-gray-800">{playerXscore}</td>
           </tr>
           <tr className="border-t hover:bg-gray-50">
-            <td className="py-3 px-6 text-sm font-medium text-gray-800">Player O</td>
+            <td className="py-3 px-6 text-sm font-medium text-green-800">Player O</td>
             <td className="py-3 px-6 text-sm font-medium text-gray-800">{playerOscore}</td>
           </tr>
         </tbody>
